@@ -1,7 +1,28 @@
-﻿namespace OOPAssiginment02
+﻿using OOPAssiginment02.Binding;
+
+namespace OOPAssiginment02
 {
     internal class Program
     {
+        //static void EmployeeProcess(FullTimeEmployee employee)
+        //{
+        //    employee.Fun01();
+        //    employee.Fun02();
+        //}
+
+        //static void EmployeeProcess(PartTimeEmployee employee)
+        //{
+        //    employee.Fun01();
+        //    employee.Fun02();
+        //}
+
+
+
+        static void EmployeeProcess(Employee employee)
+        {
+            employee.Fun01();
+            employee.Fun02();
+        }
 
         //static int Sum(int X, int Y)
         //{
@@ -65,7 +86,28 @@
             // Ref.Fun01();
             // Ref.Fun02();
             //
+            FullTimeEmployee fullTime = new FullTimeEmployee()
+            {
+                id = 1,
+                name = "ahmed",
+                email = "ah@.com",
+                salary = 12000,
+                address = ",cmvnb"
+            };
 
+            PartTimeEmployee partTime = new PartTimeEmployee()
+            {
+                id = 1,
+                name = "ahmed",
+                email = "ah@.com",
+                HoureRate = 300,
+                NumberOfHoure = 200,
+                address = ",cmvnb"
+
+            };
+
+            //EmployeeProcess(fullTime);
+            //EmployeeProcess(partTime);
         }
     }
 }
