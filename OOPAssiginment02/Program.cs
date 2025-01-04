@@ -80,6 +80,8 @@ namespace OOPAssiginment02
             //Ref = new TypeA();
             //Ref = new TypeB();
 
+            
+
             // Ref.A = 12;
             //  Ref.B = 13;
             // 
@@ -108,6 +110,16 @@ namespace OOPAssiginment02
 
             //EmployeeProcess(fullTime);
             //EmployeeProcess(partTime);
+           TypeA typeA;
+           typeA =  new TypeA();
+            typeA = new TypeB();
+            typeA= new TypeC();
+           typeA=new TypeD();
+
+            typeA.Fun01();
+            typeA.Fun02();
+           
+            
         }
     }
 }
